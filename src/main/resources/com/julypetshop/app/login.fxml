@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.julypetshop.app.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Bem vindo!" onAction="#onHelloButtonClick"/>
-</VBox>
+<BorderPane fx:id="main_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.julypetshop.app.LoginController">
+   <left>
+      <AnchorPane prefHeight="520.0" prefWidth="347.0" style="-fx-background-color: #f5d6d6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="263.0" fitWidth="353.0" layoutX="2.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/teste2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="520.0" prefWidth="587.0" style="-fx-background-color: #E6E6FA;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginBtn" layoutX="122.0" layoutY="375.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #6495ED; -fx-border-radius: 3;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="username" layoutX="114.0" layoutY="232.0" prefHeight="26.0" prefWidth="278.0" promptText="User Name">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></TextField>
+            <ImageView fitHeight="123.0" fitWidth="122.0" layoutX="200.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cancelBtn" layoutX="121.0" layoutY="429.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #6495ED; -fx-border-radius: 3;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="password" layoutX="114.0" layoutY="295.0" prefHeight="26.0" prefWidth="279.0" promptText="Passaword" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
