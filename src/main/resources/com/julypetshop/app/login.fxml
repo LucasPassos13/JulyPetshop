@@ -11,9 +11,9 @@
 
 <BorderPane fx:id="main_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.julypetshop.app.LoginController">
    <left>
-      <AnchorPane prefHeight="520.0" prefWidth="347.0" style="-fx-background-color: #f5d6d6;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="520.0" prefWidth="347.0" styleClass="navLateral" stylesheets="@../../../css/login.css" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="263.0" fitWidth="353.0" layoutX="2.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="263.0" fitWidth="353.0" layoutX="2.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
                <image>
                   <Image url="@../../../../../../img/teste2.jpg" />
                </image>
@@ -22,9 +22,9 @@
       </AnchorPane>
    </left>
    <right>
-      <AnchorPane prefHeight="520.0" prefWidth="587.0" style="-fx-background-color: #E6E6FA;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="520.0" prefWidth="587.0" style="-fx-background-color: #E6E6FA;" stylesheets="@../../../css/login.css" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="loginBtn" layoutX="122.0" layoutY="375.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #6495ED; -fx-border-radius: 3;" text="Login" textFill="WHITE">
+            <Button fx:id="loginBtn" layoutX="122.0" layoutY="375.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="40.0" prefWidth="270.0" styleClass="loginBtn" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -38,7 +38,7 @@
                   <Image url="@../../../../../../img/lock.png" />
                </image>
             </ImageView>
-            <Button fx:id="cancelBtn" layoutX="121.0" layoutY="429.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #6495ED; -fx-border-radius: 3;" text="Cancel" textFill="WHITE">
+            <Button fx:id="cancelBtn" layoutX="121.0" layoutY="429.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="270.0" styleClass="loginBtn" text="Cancel" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>

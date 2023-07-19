@@ -1,5 +1,5 @@
 .button{
-    -fx-background-color:  #E6E6FA;
+    -fx-background-color:  transparent;
 }
 
 .button:hover{
@@ -15,6 +15,30 @@
     -fx-background-radius: 8px;
 }
 
+.btn-form-add{
+    -fx-background-color: #5757fa;
+    -fx-background-radius: 4px;
+    -fx-color: #fff;
+}
+
+.btn-form-upd{
+    -fx-background-color: #54de87;
+    -fx-background-radius: 4px;
+    -fx-color: #fff;
+}
+
+.btn-form-clear{
+    -fx-background-color: #633364;
+    -fx-background-radius: 4px;
+    -fx-color: #fff;
+}
+
+.btn-form-excl{
+    -fx-background-color: #f7313b;
+    -fx-background-radius: 4px;
+    -fx-color: #fff;
+}
+
 .shadow{
     -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,.5), 6,0,0,0);
 }
@@ -22,7 +46,7 @@
 .textfield{
     -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
     -fx-background-radius: 4px;
-    -fx-border-color: linear-gradient(to bottom right, #449d6b, #633364);
+    -fx-border-color: linear-gradient(to bottom right, #b9b5f5, #633364);
     -fx-border-radius: 4px;
     -fx-border-width:.5px;
 }
@@ -30,4 +54,55 @@
 .textfield:focused{
     -fx-background-color: #fff;
     -fx-border-width: 1.5px;
+}
+
+.search{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #b9b5f5, #633364);
+    -fx-border-width:1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 0px 0px 0px 28px;
+    -fx-font-family:"Tahoma";
+}
+
+.search:focused{
+    -fx-border-width: 2px;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0px ;
+    -fx-border-color: linear-gradient(to bottom right, #b9b5f5, #633364);
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+.table-view .table-column{
+    -fx-alignment: center;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #b9b5f5, #633364);
+    -fx-border-radius: 8px 8px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family:"Arial";
+}
+
+.navLateral{
+    -fx-background-color: linear-gradient(to bottom right, #b9b5f5, #633364);
+}
+
+.headerTopo{
+    -fx-background-color: linear-gradient(to bottom right, #b9b5f5, #633364);
+    -fx-border-color: #000;
+
 }

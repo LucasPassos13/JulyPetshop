@@ -4,16 +4,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Optional;
 
 public class LoginController {
     @FXML
@@ -91,7 +89,18 @@ public class LoginController {
     }
 
     public void close(){
-        System.exit(0);
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Mensagem de confirmação");
+        alert.setHeaderText(null);
+        alert.setContentText("Deseja sair do sistema?");
+        Optional<ButtonType> option = alert.showAndWait();
+
+        if(option.get().equals(ButtonType.OK)){
+            System.exit(0);
+        }
+
+
     }
 
 }
