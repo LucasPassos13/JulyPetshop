@@ -14,7 +14,7 @@ public class LoginApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 840, 520);
         stage.setTitle("Jully PetShop");
-        stage.initStyle(StageStyle.UTILITY);
+        stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
     }

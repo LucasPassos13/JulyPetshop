@@ -24,26 +24,26 @@
    <right>
       <AnchorPane prefHeight="520.0" prefWidth="587.0" style="-fx-background-color: #E6E6FA;" stylesheets="@../../../css/login.css" BorderPane.alignment="CENTER">
          <children>
+            <TextField fx:id="username" layoutX="114.0" layoutY="232.0" prefHeight="26.0" prefWidth="278.0" promptText="User Name">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="114.0" layoutY="295.0" prefHeight="26.0" prefWidth="279.0" promptText="Passaword" />
             <Button fx:id="loginBtn" layoutX="122.0" layoutY="375.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="40.0" prefWidth="270.0" styleClass="loginBtn" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="username" layoutX="114.0" layoutY="232.0" prefHeight="26.0" prefWidth="278.0" promptText="User Name">
-               <font>
-                  <Font name="Arial" size="12.0" />
-               </font></TextField>
-            <ImageView fitHeight="123.0" fitWidth="122.0" layoutX="200.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../img/lock.png" />
-               </image>
-            </ImageView>
             <Button fx:id="cancelBtn" layoutX="121.0" layoutY="429.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="270.0" styleClass="loginBtn" text="Cancel" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <PasswordField fx:id="password" layoutX="114.0" layoutY="295.0" prefHeight="26.0" prefWidth="279.0" promptText="Passaword" />
+            <ImageView fitHeight="123.0" fitWidth="122.0" layoutX="200.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/lock.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </right>

@@ -95,7 +95,7 @@
                                     <TextField fx:id="cli_numero" layoutX="516.0" layoutY="139.0" prefHeight="26.0" prefWidth="43.0" styleClass="textfield" stylesheets="@../../../css/dashboard.css" />
                                     <Button fx:id="cliExcluirBtn" layoutX="757.0" layoutY="151.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" styleClass="btn-form-excl" text="Excluir" textFill="WHITE" />
                                     <Button fx:id="cliAlterarBtn" layoutX="757.0" layoutY="113.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" styleClass="btn-form-upd" text="Alterar" textFill="WHITE" />
-                                    <Button fx:id="cliCadastrarBtn" layoutX="664.0" layoutY="115.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" styleClass="btn-form-add" text="Cadastrar" textFill="WHITE" />
+                                    <Button fx:id="cliCadastrarBtn" layoutX="664.0" layoutY="115.0" mnemonicParsing="false" onAction="#addClienteCadastrar" prefHeight="30.0" prefWidth="85.0" styleClass="btn-form-add" text="Cadastrar" textFill="WHITE" />
                                     <Button fx:id="cliLimparBtn" layoutX="664.0" layoutY="151.0" mnemonicParsing="false" onAction="#limpaForm" prefHeight="30.0" prefWidth="85.0" styleClass="btn-form-clear" text="Limpar" textFill="WHITE" />
                                  </children>
                               </AnchorPane>
@@ -105,8 +105,8 @@
                                     <String fx:value="white-bg" />
                                  </styleClass>
                                  <children>
-                                    <TextField layoutX="51.0" layoutY="20.0" prefHeight="26.0" prefWidth="231.0" promptText="Buscar" styleClass="search" stylesheets="@../../../css/dashboard.css" />
-                                    <TableView layoutX="51.0" layoutY="59.0" prefHeight="244.0" prefWidth="806.0">
+                                    <TextField fx:id="cli_busca" layoutX="51.0" layoutY="20.0" prefHeight="26.0" prefWidth="231.0" promptText="Buscar" styleClass="search" stylesheets="@../../../css/dashboard.css" />
+                                    <TableView fx:id="addCliente_tableView" layoutX="51.0" layoutY="59.0" prefHeight="244.0" prefWidth="806.0">
                                       <columns>
                                         <TableColumn fx:id="cli_col_id" prefWidth="43.0" text="ID" />
                                         <TableColumn fx:id="cli_col_name" prefWidth="107.0" text="Nome" />
